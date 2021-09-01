@@ -1,0 +1,8 @@
+<launch>
+    <node 
+        name="record_odom" 
+        pkg="turtlebot3_move" 
+        type="record_odom.py"
+        output="screen" 
+    />
+</launch>

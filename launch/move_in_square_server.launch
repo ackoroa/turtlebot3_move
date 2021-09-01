@@ -1,0 +1,8 @@
+<launch>
+    <node 
+        name="move_in_square" 
+        pkg="turtlebot3_move" 
+        type="move_in_square.py"
+        output="screen" 
+    />
+</launch>

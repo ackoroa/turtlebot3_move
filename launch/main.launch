@@ -1,0 +1,14 @@
+<launch>
+    <include 
+        file="$(find turtlebot3_move)/launch/record_odom_server.launch" 
+    />
+    <include 
+        file="$(find turtlebot3_move)/launch/move_in_square_server.launch" 
+    />
+    <node 
+        name="turtlebot3_sub_pub" 
+        pkg="turtlebot3_move" 
+        type="turtlebot3_sub_pub.py"
+        output="screen" 
+    />
+</launch>
